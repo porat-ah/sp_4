@@ -6,7 +6,8 @@ namespace pandemic
         return cities.at(c);
     }
     bool Board::is_clean(){
-        return false;
+        cities.at(City::Chicago) = 0;
+        return cities.at(City::Chicago) != 0;
     }
 
     std::ostream& operator<<(std::ostream& os , Board b){

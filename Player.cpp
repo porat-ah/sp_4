@@ -2,7 +2,7 @@
 
 namespace pandemic
 {
-        Player::Player(Board b , City c){}
+        Player::Player(Board b , City c){r = "player";}
         Player::~Player(){}
         Player& Player::take_card(City c){return *this;}
         Player& Player::drive(City c){return *this;}
@@ -12,6 +12,6 @@ namespace pandemic
         void Player::build(){}
         void Player::discover_cure(Color cl){}
         Player& Player::treat(City c){return *this;}
-        std::string Player::role(){return "";}
+        std::string Player::role(){return r;}
    
 }

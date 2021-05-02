@@ -10,7 +10,7 @@ namespace pandemic
     class Player
     {
     private:
-        /* data */
+        std::string r;
     public:
         Player(Board b , City c);
         ~Player();
