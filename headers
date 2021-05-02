@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#https://stackoverflow.com/questions/3061582/include-all-files-in-a-directory
+HEADER=headers.hpp
+echo "#ifndef __ALL_HEADERS__" > $HEADER
+echo "#define __ALL_HEADERS__" >> $HEADER
+for file in *.hpp
+do
+    echo "#include \"$file\"" >> $HEADER
+done
+echo "#endif" >> $HEADER

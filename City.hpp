@@ -1,0 +1,85 @@
+#pragma once
+
+namespace pandemic
+{
+   enum City{ 
+      //Black  
+      Algiers,
+      Baghdad,
+      Cairo,
+      Chennai,
+      Delhi,
+      Istanbul,
+      Karachi,
+      Kolkata,
+      Moscow,
+      Mumbai,
+      Riyadh,
+      Tehran,
+
+      //Blue
+      Atlanta,
+      Chicago,
+      Essen,
+      London,
+      Madrid,
+      Milan,
+      Montreal,
+      NewYork,
+      Paris,
+      SanFrancisco,
+      StPetersburg,
+      Washington,
+
+      //Yellow
+      Bogota,
+      BuenosAires,
+      Johannesburg,
+      Khartoum,
+      Kinshasa,
+      Lagos,
+      Lima,
+      LosAngeles,
+      MexicoCity,
+      Miami,
+      Santiago,
+      SaoPaulo,
+
+      //Red
+      Bangkok,
+      Beijing,
+      HoChiMinhCity,
+      HongKong,
+      Jakarta,
+      Manila,
+      Osaka,
+      Seoul,
+      Shanghai,
+      Sydney,
+      Taipei,
+      Tokyo
+
+   } ;
+} 
+//  Kinshasa,
+//    MexicoCity,
+//    HoChiMinhCity,
+//    Chicago,
+//    Atlanta,
+//    Johannesburg,
+//    Khartoum,
+//    SaoPaulo,
+//    Washington,
+//    Madrid,
+//    Taipei,
+//    Sydney,
+//    Seoul,
+//    LosAngeles,
+//    Miami,
+//    Lima,
+//    Madrid,
+//    Paris, 
+//    Istanbul,
+//    Cairo,
+//    Chicago, 
+//    Washington,
