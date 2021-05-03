@@ -121,7 +121,7 @@ int main() {
 	}
 
 	player.take_card(City::Miami)
-	 .take_card(City::Miami)
+	 .take_card(City::Bogota)
 	 .take_card(City::Lima);
 
 	player.discover_cure(Color::Yellow); // legal action: you discard 5 yellow cards and discover a yellow cure.
