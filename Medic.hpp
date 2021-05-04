@@ -9,6 +9,6 @@ namespace pandemic
     private:
         /* data */
     public:
-        Medic(Board b , City c);
+        Medic(Board& b , City c);
     };
 } 

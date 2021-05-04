@@ -9,6 +9,6 @@ namespace pandemic
     private:
         /* data */
     public:
-        GeneSplicer(Board b , City c);
+        GeneSplicer(Board& b , City c);
     };  
 } 

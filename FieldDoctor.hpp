@@ -9,6 +9,6 @@ namespace pandemic
     private:
         /* data */
     public:
-        FieldDoctor(Board b , City c);
+        FieldDoctor(Board& b , City c);
     };
 } 

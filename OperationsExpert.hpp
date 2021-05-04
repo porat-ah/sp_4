@@ -9,6 +9,7 @@ namespace pandemic
     private:
         /* data */
     public:
-        OperationsExpert(Board b , City c);
+        OperationsExpert(Board& b , City c);
+        void build() override;
     };
 } 

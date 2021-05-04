@@ -9,7 +9,7 @@ namespace pandemic
     private:
         /* data */
     public:
-        Virologist(Board b , City c);
+        Virologist(Board& b , City c);
         Virologist();
     };
 } 

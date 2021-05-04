@@ -9,6 +9,6 @@ namespace pandemic
     private:
         int num;
     public:
-        Scientist(Board b , City c,int i);
+        Scientist(Board& b , City c,int i);
     }; 
 }
