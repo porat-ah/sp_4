@@ -93,6 +93,7 @@ int main() {
 
 
 	/* build action */
+
 	player.drive(City::LosAngeles);  // legal action: note that LosAngeles is connected to Sydney.
 	player.build();     // legal action: build a research station in LosAngeles.
 		// NOTE: you do not have the LosAngeles card, so for other roles this would throw an exception.
