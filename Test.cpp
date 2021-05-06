@@ -8,18 +8,18 @@ TEST_CASE("board functions"){
     CHECK(board.is_clean());
         for (size_t i = 1; i < 6; i++)
         {
-            for (City c = City::Algiers; c != City::Tokyo ; c = City(c+1))
+            for (City c = City::Algiers; c != City::Washington ; c = City(c+1))
         {
             board[c] = i;
             CHECK(!board.is_clean());
             board[c] = 0;
         }
-        for (City c = City::Algiers; c != City::Tokyo ; c = City(c+1))
+        for (City c = City::Algiers; c != City::Washington ; c = City(c+1))
         {
             board[c] = i;
             CHECK(!board.is_clean());
         }
-        for (City c = City::Algiers; c != City::Tokyo ; c =  City(c+1))
+        for (City c = City::Algiers; c != City::Washington ; c =  City(c+1))
         {
             board[c] = 0;
         }
