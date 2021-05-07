@@ -10,6 +10,6 @@ namespace pandemic
         /* data */
     public:
         OperationsExpert(Board& b , City c);
-        void build() override;
+        OperationsExpert& build() override;
     };
 } 

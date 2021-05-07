@@ -3,11 +3,11 @@
 namespace pandemic{
     Researcher::Researcher(Board& b , City c):Player(b,c,"Researcher"){}
 
-    void Researcher::discover_cure(Color cl){
+    Researcher& Researcher::discover_cure(Color cl){
         if (board.has_station(loc))
         {
             Player::discover_cure(cl);
-            return;
+            return *this;
         }
         if (cards.find(loc) != cards.end())
         {
@@ -15,11 +15,13 @@ namespace pandemic{
             cards.insert(loc);
             Player::discover_cure(cl);
             Player::destroy();
+            return *this;
         }
         cards.insert(loc);
         Player::build();
         Player::discover_cure(cl);
         Player::destroy();
+        return *this;
     }
 
 }

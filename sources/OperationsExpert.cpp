@@ -2,17 +2,18 @@
 
 namespace pandemic{
     OperationsExpert::OperationsExpert(Board& b , City c):Player(b,c,"OperationsExpert"){}
-    void OperationsExpert::build()
+    OperationsExpert& OperationsExpert::build()
     {
         if(cards.find(loc) == cards.end()){
             cards.insert(loc);
             Player::build();
             cards.erase(loc);
-            return;
+            return *this;
         }
 
         Player::build();
         cards.insert(loc);
+        return *this;
         
     }
 }

@@ -10,6 +10,6 @@ namespace pandemic
         /* data */
     public:
         Researcher(Board& b , City c);
-        void discover_cure(Color cl) override;
+        Researcher& discover_cure(Color cl) override;
     }; 
 } 

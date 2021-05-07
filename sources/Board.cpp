@@ -2,7 +2,7 @@
 
 namespace pandemic
 {
-    Board::Board(){
+    Board::Board():cubes(),cures(),re_stations(){
         cubes.fill(0);
         cures.fill(false);
         re_stations.fill(false);

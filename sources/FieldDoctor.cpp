@@ -13,7 +13,7 @@ namespace pandemic{
         if (Board::cities.at(loc).find(c) ==
                 Board::cities.at(loc).end() )
         {
-            return *this;
+            throw std::invalid_argument("not a near by city!");
         }
         change_loc(c);
         Player::treat(c);
