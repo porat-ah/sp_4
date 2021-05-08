@@ -20,6 +20,7 @@ namespace pandemic
         void _discover_cure(Color cl,int num,bool same_color = true);
         void destroy();
         virtual void change_loc(City c);
+        void check_loc(City c);
     public:
         Player(Board& b , City c , std::string r);
         ~Player();

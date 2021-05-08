@@ -4,6 +4,7 @@ namespace pandemic{
     Dispatcher::Dispatcher(Board& b , City c):Player(b,c,"Dispatcher"){}
 
     Dispatcher& Dispatcher::fly_direct(City c){
+        check_loc(c);
         if (board.has_station(loc))
         {
             loc = c;

@@ -1,5 +1,4 @@
-#ifndef __ALL_HEADERS__
-#define __ALL_HEADERS__
+#pragma once
 #include "Board.hpp"
 #include "City.hpp"
 #include "Color.hpp"
@@ -13,4 +12,4 @@
 #include "Researcher.hpp"
 #include "Scientist.hpp"
 #include "Virologist.hpp"
-#endif
+
